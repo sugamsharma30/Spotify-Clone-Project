@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2c3e50;
+    /* Change this to your desired thumb color */
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #34495e;
+    /* Change this to your desired thumb color on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2d2d2d;
+    /* Change this to your desired track color */
+}
+
+/* Handle */
+::-webkit-scrollbar-track-piece {
+    background: #2d2d2d;
+    /* Change this to your desired track color */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-track-piece:hover {
+    background: #333;
+    /* Change this to your desired track color on hover */
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    /* color: white; */
+}
+
+body {
+    background-color: black;
+    /* color: white; */
+    overflow-x: hidden;
+    max-height: 120vh;
+}
+
+.container {
+    color: white;
+    display: flex;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+}
+
+
+.box1 {
+    width: 20vw;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #121212;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.change {
+    filter: invert(1);
+}
+
+.change2 {
+    filter: invert(0.4);
+}
+
+.highlight {
+    position: relative;
+    z-index: 10;
+}
+
+.home {
+    position: relative;
+    top: 5px;
+}
+
+.home p {
+    position: relative;
+    bottom: 22px;
+    left: 37px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.search p {
+    position: relative;
+    bottom: 22px;
+    left: 37px;
+    font-weight: 600;
+    color: #a7a7a7;
+
+}
+
+.box2 {
+    width: 20vw;
+    height: 65vh;
+    background-color: #121212;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.library p {
+    position: relative;
+    bottom: 22px;
+    left: 37px;
+    font-weight: bold;
+    color: #a7a7a7;
+}
+
+.shift {
+    position: relative;
+    left: 170px;
+    top: 7px;
+}
+
+.containminibox {
+    width: 20vw;
+    height: 38vh;
+    position: relative;
+    bottom: 5px;
+    background-color: #121212;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.minibox {
+    width: 19vw;
+    height: 12vh;
+    position: relative;
+    bottom: 20px;
+    right: 15px;
+    background-color: #242424;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.text1 {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.text2 {
+    margin-top: 7px;
+    font-size: 10px;
+}
+
+.btn {
+    border-radius: 15px;
+    border: 0;
+    font-size: 12px;
+    padding: 5px 12px;
+    margin-top: 10px;
+}
+
+.first {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+
+.first li {
+    list-style: none;
+}
+
+.first li a {
+    text-decoration: none;
+    color: #a7a7a7;
+    font-size: 9px;
+}
+
+.btn2 {
+    border-radius: 15px;
+    border: 0;
+    font-size: 12px;
+    padding: 5px 25px;
+    margin-top: 10px;
+    position: relative;
+    right: 15px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: black;
+}
+
+.move {
+    position: relative;
+    left: 10px;
+    top: 3px;
+    z-index: 10;
+}
+
+.container2 {
+    width: 78vw;
+    height: 93vh;
+    background-color: #1e1e1e;
+    border-radius: 7px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.navbar {
+    background-color: #101010;
+    width: 75vw;
+    height: 50px;
+    border-radius: 7px;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    top: 15px;
+    left: 450px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #a7a7a7;
+    font-size: 14px;
+}
+
+
+.login {
+    border-radius: 15px;
+    border: 0;
+    font-size: 12px;
+    padding: 8px 22px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 770px;
+}
+
+.signup {
+    border-radius: 15px;
+    border: 0;
+    font-size: 12px;
+    padding: 5px 25px;
+    color: #a7a7a7;
+    background-color: #101010;
+    position: absolute;
+    top: 15px;
+    left: 680px;
+}
+
+.arrow {
+    filter: invert(1);
+    position: relative;
+    bottom: 6px;
+}
+
+.play {
+    position: relative;
+    top: 60px;
+    left: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.containcard {
+    width: 70vw;
+    height: 37vh;
+    background-color: #181818;
+    border-radius: 7px;
+    position: absolute;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    top: 90px;
+    left: 7px;
+    /* right: 150px; */
+}
+
+.card {
+    width: 160px;
+    height: 200px;
+    border-radius: 7px;
+    background-color: #1e1e1e;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.card:hover .playmusic {
+    opacity: 1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    }
+}
+
+.animation1 {
+    animation: pulse 2s infinite;
+}
+
+a:hover {
+    color: white;
+}
+
+.imgholder {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    /* border: 2px solid red; */
+}
+
+.imgholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cardheading {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    letter-spacing: 0.5px;
+    top: 18px;
+    left: 23px;
+
+}
+
+.cardtext {
+    font-size: 10px;
+    position: relative;
+    top: 25px;
+    left: 23px;
+    color: #a7a7a7;
+}
+
+.foot {
+    position: relative;
+    top: 45vh;
+
+
+}
+
+.tags {
+    position: relative;
+    left: 25px;
+    top: 80px;
+}
+
+.tags ul {
+    display: flex;
+    gap: 40px;
+}
+
+.tags ul li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.anchors {
+    position: relative;
+    top: 88px;
+    left: 25px;
+}
+
+.anchors ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #a7a7a7;
+    font-size: 12px;
+}
+
+.anchors2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.anchors2 {
+    position: relative;
+    top: 15px;
+    left: 150px;
+}
+
+.anchors3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.anchors3 {
+    position: relative;
+    bottom: 110px;
+    left: 258px;
+}
+
+.containbutton {
+    width: 250px;
+    position: relative;
+    left: 40vw;
+    top: 20vh;
+    height: 25px;
+    position: relative;
+    display: flex;
+    gap: 23px;
+
+}
+
+.playsong {
+    /* position: relative;
+    top: 170px;
+    left: 600px; */
+    color: rgb(97, 0, 0);
+    background-color: pink;
+    /* z-index: 1000; */
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+}
+
+.playmusic {
+    opacity: 0;
+    position: relative;
+    left: 11vw;
+    bottom: 2vh;
+    background-color: #121212;
+    border: 0;
+    font-size: 15px;
+    border-radius: 50%;
+}
+
+button:hover {
+    font-size: 0.88em;
+    box-shadow: 0 0 10px rgba(68, 0, 0, 0.727);
+}
+
+.first a:hover {
+    color: white;
+}
+
+.footer {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 10vh;
+    background-color: #7370d1;
+}
+
+.footer button {
+    margin: 12px 23px;
+    font-size: 12px;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 23px;
+}
